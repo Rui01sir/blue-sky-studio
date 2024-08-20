@@ -5,7 +5,7 @@ function Homepage(){
     return(
         <div>
             <div className="Home-banner">
-                <img src={`${process.env.PUBLIC_URL}/images/banner.png`} alt="banner"></img>
+                <img src={`${process.env.PUBLIC_URL}/img/banner.png`} alt="banner"></img>
                 <Link to=""></Link>
             </div>
         </div>
