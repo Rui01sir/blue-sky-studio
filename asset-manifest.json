@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blue-sky-studio/static/css/main.be2c84eb.css",
-    "main.js": "/blue-sky-studio/static/js/main.d5266b5b.js",
+    "main.css": "/blue-sky-studio/static/css/main.06293ea3.css",
+    "main.js": "/blue-sky-studio/static/js/main.3d07dded.js",
     "static/js/453.dcc03a5e.chunk.js": "/blue-sky-studio/static/js/453.dcc03a5e.chunk.js",
     "index.html": "/blue-sky-studio/index.html",
-    "main.be2c84eb.css.map": "/blue-sky-studio/static/css/main.be2c84eb.css.map",
-    "main.d5266b5b.js.map": "/blue-sky-studio/static/js/main.d5266b5b.js.map",
+    "main.06293ea3.css.map": "/blue-sky-studio/static/css/main.06293ea3.css.map",
+    "main.3d07dded.js.map": "/blue-sky-studio/static/js/main.3d07dded.js.map",
     "453.dcc03a5e.chunk.js.map": "/blue-sky-studio/static/js/453.dcc03a5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be2c84eb.css",
-    "static/js/main.d5266b5b.js"
+    "static/css/main.06293ea3.css",
+    "static/js/main.3d07dded.js"
   ]
 }
