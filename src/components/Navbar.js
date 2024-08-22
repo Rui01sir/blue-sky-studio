@@ -40,23 +40,25 @@ function Navbar() {
                     </div>
                     <ul>
                         <li><Link to="/Company">COMPANY</Link></li>
-                        <li><Link to="#">NEWS</Link></li>
-                        <li><Link to="#">PRODUCT</Link></li>
-                        <li><Link to="#">SUPPORT</Link></li>
-                        <li><Link to="#">CONTACT</Link></li>
+                        <li><Link to="#">最新消息</Link></li>
+                        <li><Link to="#">工商案例</Link></li>
+                        <li><Link to="#">服務項目</Link></li>
+                        <li><Link to="#">聯絡我們</Link></li>
                         <div className="language">
                             <Link
                                 to="/"
                                 style={{ fontWeight: selectedLanguage === 'EN' ? 'bold' : 'normal' }}
                             >
-                                <img src="./img/usa.svg" alt="usa-logo"></img>EN
+                                中
+                                  // <img src="./img/usa.svg" alt="usa-logo"></img>
                             </Link>
                             /
                             <Link
                                 to="/Page404"
                                 style={{ fontWeight: selectedLanguage === 'CN' ? 'bold' : 'normal' }}
                             >
-                                CN<img src="./img/roc.svg" alt="roc-logo"></img>
+                                EN
+                                 // <img src="./img/roc.svg" alt="roc-logo"></img>
                             </Link>
                         </div>
                     </ul>
