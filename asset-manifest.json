@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blue-sky-studio/static/css/main.06293ea3.css",
-    "main.js": "/blue-sky-studio/static/js/main.3d07dded.js",
-    "static/js/453.dcc03a5e.chunk.js": "/blue-sky-studio/static/js/453.dcc03a5e.chunk.js",
-    "index.html": "/blue-sky-studio/index.html",
-    "main.06293ea3.css.map": "/blue-sky-studio/static/css/main.06293ea3.css.map",
-    "main.3d07dded.js.map": "/blue-sky-studio/static/js/main.3d07dded.js.map",
-    "453.dcc03a5e.chunk.js.map": "/blue-sky-studio/static/js/453.dcc03a5e.chunk.js.map"
+    "main.css": "/static/css/main.06293ea3.css",
+    "main.js": "/static/js/main.25f0c75c.js",
+    "static/js/453.dcc03a5e.chunk.js": "/static/js/453.dcc03a5e.chunk.js",
+    "index.html": "/index.html",
+    "main.06293ea3.css.map": "/static/css/main.06293ea3.css.map",
+    "main.25f0c75c.js.map": "/static/js/main.25f0c75c.js.map",
+    "453.dcc03a5e.chunk.js.map": "/static/js/453.dcc03a5e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06293ea3.css",
-    "static/js/main.3d07dded.js"
+    "static/js/main.25f0c75c.js"
   ]
 }
