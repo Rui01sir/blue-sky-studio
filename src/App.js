@@ -4,7 +4,7 @@ import Homepage from './Homepage';
 
 function App() {
   return (
-    <Router basename="/blue-sky-studio">
+    <Router>
      <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
