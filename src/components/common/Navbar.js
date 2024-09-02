@@ -61,7 +61,7 @@ function Navbar() {
                 <div className="navbar">
                     <div className="nav-logo">
                         <Link to="/">
-                            <img src={`${process.env.PUBLIC_URL}/img/logo-b.svg`} alt="nav-logo"/>
+                            <img src={`${process.env.PUBLIC_URL}/img/logo-w.svg`} alt="nav-logo"/>
                         </Link>
                     </div>
                     <ul>
@@ -74,14 +74,16 @@ function Navbar() {
                                 to="/"
                                 style={{ fontWeight: selectedLanguage === 'EN' ? 'bold' : 'normal' }}
                             >
-                                <img src={`${process.env.PUBLIC_URL}/img/usa.svg`} alt="usa-logo"></img>EN
+                                {/* <img src={`${process.env.PUBLIC_URL}/img/usa.svg`} alt="usa-logo"></img> */}
+                                EN / 
                             </Link>
-                            /
+                            
                             <Link
                                 to="/Page404"
                                 style={{ fontWeight: selectedLanguage === 'CN' ? 'bold' : 'normal' }}
                             >
-                                CN<img src={`${process.env.PUBLIC_URL}/img/roc.svg`} alt="roc-logo"></img>
+                                CN
+                                {/* <img src={`${process.env.PUBLIC_URL}/img/roc.svg`} alt="roc-logo"></img> */}
                             </Link>
                         </div>
                     </ul>
