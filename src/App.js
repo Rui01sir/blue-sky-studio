@@ -1,4 +1,5 @@
 import './App.css';
+import 'animate.css';
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/page/HomePage';
