@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { useLocation , Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-    const location = useLocation();
-    const [selectedLanguage, setSelectedLanguage] = useState('EN');
+    // const location = useLocation();
+    // const [selectedLanguage, setSelectedLanguage] = useState('EN');
     const [menuActive, setMenuActive] = useState(false);
 
-    useEffect(() => {
-        if (location.pathname === '/Page404') {
-            setSelectedLanguage('CN');
-        } else {
-            setSelectedLanguage('EN');
-        }
+    // useEffect(() => {
+    //     if (location.pathname === '/Page404') {
+    //         setSelectedLanguage('CN');
+    //     } else {
+    //         setSelectedLanguage('EN');
+    //     }
 
-        setMenuActive(false);
-    }, [location.pathname]);
+    //     setMenuActive(false);
+    // }, [location.pathname]);
 
     const toggleMenu = () => {
         setMenuActive(!menuActive);
@@ -69,12 +69,13 @@ function Navbar() {
                         <li><Link to="#">工商案例</Link></li>
                         <li><Link to="#">服務項目</Link></li>
                         <li><Link to="#">聯絡我們</Link></li>
-                        <div className="language">
+                        <li><div className="member-btn"><img src={`${process.env.PUBLIC_URL}/img/member.svg`} alt="member-logo"></img>會員登入</div></li>
+                        {/* <div className="language">
                             <Link
                                 to="/"
                                 style={{ fontWeight: selectedLanguage === 'EN' ? 'bold' : 'normal' }}
                             >
-                                {/* <img src={`${process.env.PUBLIC_URL}/img/usa.svg`} alt="usa-logo"></img> */}
+                                <img src={`${process.env.PUBLIC_URL}/img/usa.svg`} alt="usa-logo"></img>
                                 EN / 
                             </Link>
                             
@@ -83,9 +84,9 @@ function Navbar() {
                                 style={{ fontWeight: selectedLanguage === 'CN' ? 'bold' : 'normal' }}
                             >
                                 CN
-                                {/* <img src={`${process.env.PUBLIC_URL}/img/roc.svg`} alt="roc-logo"></img> */}
+                                <img src={`${process.env.PUBLIC_URL}/img/roc.svg`} alt="roc-logo"></img>
                             </Link>
-                        </div>
+                        </div> */}
                     </ul>
                     <button 
                         className={`menu-toggle ${menuActive ? 'active' : ''}`} 
