@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
 .no-scroll {
   overflow: hidden;
   position: fixed;
@@ -28,12 +30,35 @@ h1{
   font-size: 64px;
   color: #FFFFFB;
   margin: 0;
+  font-weight: 600;
+  transform: scaleY(0.7);
+  display: inline-block;
 }
 
 h4{
   font-size: 36px;
   color: #FFFFFB;
   margin: 0;
+  font-weight: 300;
+  transform: scaleY(0.7);
+  display: inline-block;
+}
+
+h6{
+  color: #FFFFFB;
+  margin: 0;
+  font-weight: 200;
+  transform: scaleY(0.7);
+  display: inline-block;
+}
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  transform: scaleY(0.7);
+  display: inline-block;
 }
 
 /* TopButton */
@@ -111,6 +136,11 @@ nav {
   width: 50px;
 }
 
+.nav-logo a{
+  transform: scaleY(1);
+  display: inline-block;
+}
+
 .nav-logo img{
   width: 30px;
 }
@@ -120,6 +150,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -136,11 +167,6 @@ nav li {
   color: #FFFFFB;
 }
 
-a {
-  height: 17px;
-  text-decoration: none;
-  color: inherit;
-}
 
 .member-btn{
   width: 140px;
@@ -154,28 +180,13 @@ a {
   font-size: 24px;
 }
 
+.member-btn img a{
+  transform: scaleY(0.7);
+  display: inline-block;
+}
+
 .member-btn img{
   margin-right: 5px;
-}
-
-.language {
-  margin-left: 52px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.language a {
-  display: flex;
-  align-items: center;
-  color: #FFFFFB;
-}
-
-.language a img {
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 18px;
-  display: none;
 }
 
 nav button {
@@ -361,7 +372,7 @@ nav ul li, nav ul.active li {
 footer{
   width: 100%;
   height: 200px;
-  background-color: #8a8a8a;
+  background-color: #374863;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,7 +389,8 @@ footer{
   margin-right: 8.3333%;
   margin-top: 77px;
   text-align: center;
-  color: #374863;
+  color: #fffffb;
+  font-family: "Lexend Zetta", sans-serif;
 }
 
 .footer-bar ul{
@@ -514,41 +526,65 @@ footer{
   }
 }
 
-/* Loading.css */
+/* Loading 整體容器樣式 */
 .loading-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #374863; /* 背景色根據你的需要進行調整 */
+  background-color: #374863;
 }
 
 .svg-container {
   position: relative;
-  width: 200px; /* 根據你的設計需要調整 */
-  height: 200px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
 }
 
-.loading-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: slideRotate 3s ease-in-out forwards;
+.svg-container.slideUp {
+  flex-direction: row;
+  transition: all 1s ease-in-out;
 }
 
-@keyframes slideRotate {
+.svg-container__buttom {
+  z-index: 1;
+  animation: slideUp 3s ease-in-out forwards;
+}
+
+.svg-container__top {
+  /* position: absolute;  */
+  z-index: 0;
+  animation: slideInFromBehind 3s 3s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideInFromBehind {
   0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(0%) rotate(0deg);
+    transform: translateX(0%);
+    opacity: 0;
   }
   100% {
-    transform: translateY(-100%) rotate(990deg);
+    transform: translateX(-30%);
+    opacity: 1;
   }
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 
 /* TopButton */
 .scroll-buttons {

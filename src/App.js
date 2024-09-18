@@ -7,6 +7,7 @@ import TopButton from './components/common/TopButton';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Loading from './components/animations/Loading';
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,7 +19,18 @@ function App() {
     <Router>
       {!isLoading && <Navbar />}
       <Routes>
-        <Route path="/" element={<Loading Component={HomePage} onLoadingFinish={handleLoadingFinish} />} />
+        {/* 條件渲染 Loading 或 HomePage 組件 */}
+        <Route 
+          path="/" 
+          element={
+            isLoading ? (
+              <Loading onLoadingFinish={handleLoadingFinish} />
+            ) : (
+              <HomePage />
+            )
+          } 
+        />
+        {/* 其他路由 */}
         {/* <Route path="*" element={<Page404 />} /> */}
       </Routes>
       <TopButton />
