@@ -1,22 +1,42 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState} from 'react';
 
 const Loading = ({ Component, onLoadingFinish }) => {
-  useEffect(() => {
-    // 假設動畫時間為3秒，3秒後觸發 onLoadingFinish
-    const timer = setTimeout(() => {
-      onLoadingFinish();
-    }, 3000); // 這個時間根據你的動畫時間進行調整
+  const [isSlideUp, setIsSlideUp] = useState(false);
 
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      setIsSlideUp(true);
+    }, 3000);
+
+    const timer2 = setTimeout(() => {
+      onLoadingFinish();
+    }, 5000);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, [onLoadingFinish]);
 
   return (
     <div className="loading-container">
-    <div className="svg-container">
-      <img src={`${process.env.PUBLIC_URL}/img/Group-10.svg`} alt="Group-10-logo" className="loading-svg"></img>
-      <img src={`${process.env.PUBLIC_URL}/img/Group-11.svg`} alt="Group-11-logo" className="loading-svg"></img>
+         <div className={`svg-container ${isSlideUp ? 'slideUp' : ''}`}>
+         <div className="svg-container__top">
+           <img
+             src={`${process.env.PUBLIC_URL}/img/Group-10.svg`}
+             alt="Group-10-logo"
+             className="loading-svg"
+           />
+         </div>
+         <div className="svg-container__buttom">
+           <img
+             src={`${process.env.PUBLIC_URL}/img/Group-11.svg`}
+             alt="Group-11-logo"
+             className="loading-svg"
+           />
+         </div>
+       </div>
     </div>
-  </div>
   );
 };
 

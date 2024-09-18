@@ -69,7 +69,7 @@ function Navbar() {
                         <li><Link to="#">工商案例</Link></li>
                         <li><Link to="#">服務項目</Link></li>
                         <li><Link to="#">聯絡我們</Link></li>
-                        <li><div className="member-btn"><img src={`${process.env.PUBLIC_URL}/img/member.svg`} alt="member-logo"></img>會員登入</div></li>
+                        <li><div className="member-btn"><img src={`${process.env.PUBLIC_URL}/img/member.svg`} alt="member-logo"></img><Link to="#">會員登入</Link></div></li>
                         {/* <div className="language">
                             <Link
                                 to="/"
