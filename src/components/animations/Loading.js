@@ -6,11 +6,11 @@ const Loading = ({ Component, onLoadingFinish }) => {
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setIsSlideUp(true);
-    }, 3000);
+    }, 1000);
 
     const timer2 = setTimeout(() => {
       onLoadingFinish();
-    }, 5000);
+    }, 3300);
 
     return () => {
       clearTimeout(timer1);
@@ -20,22 +20,22 @@ const Loading = ({ Component, onLoadingFinish }) => {
 
   return (
     <div className="loading-container">
-         <div className={`svg-container ${isSlideUp ? 'slideUp' : ''}`}>
-         <div className="svg-container__top">
-           <img
-             src={`${process.env.PUBLIC_URL}/img/Group-10.svg`}
-             alt="Group-10-logo"
-             className="loading-svg"
-           />
-         </div>
-         <div className="svg-container__buttom">
-           <img
-             src={`${process.env.PUBLIC_URL}/img/Group-11.svg`}
-             alt="Group-11-logo"
-             className="loading-svg"
-           />
-         </div>
-       </div>
+          <div className={`svg-container ${isSlideUp ? 'slideUp' : ''}`}>
+          <div className="svg-container__top">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/Group-10.svg`}
+              alt="Group-10-logo"
+              className="loading-svg"
+            />
+          </div>
+          <div className="svg-container__buttom">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/Group-11.svg`}
+              alt="Group-11-logo"
+              className="loading-svg"
+            />
+          </div>
+        </div>
     </div>
   );
 };

@@ -61,15 +61,17 @@ function Navbar() {
                 <div className="navbar">
                     <div className="nav-logo">
                         <Link to="/">
-                            <img src={`${process.env.PUBLIC_URL}/img/logo-w.svg`} alt="nav-logo"/>
+                            <img src={`${process.env.PUBLIC_URL}/img/logo-b.svg`} alt="nav-logo"/>
                         </Link>
                     </div>
                     <ul>
                         <li><Link to="#">最新消息</Link></li>
                         <li><Link to="#">工商案例</Link></li>
                         <li><Link to="#">服務項目</Link></li>
+                        {/* <li><Link to="Link/">建立碰卡</Link></li> */}
                         <li><Link to="#">聯絡我們</Link></li>
-                        <li><div className="member-btn"><img src={`${process.env.PUBLIC_URL}/img/member.svg`} alt="member-logo"></img><Link to="#">會員登入</Link></div></li>
+                        <li><Link to="#"><img src={`${process.env.PUBLIC_URL}/img/search-icon.svg`} alt="search-icon"/></Link></li>
+                        {/* <li><div className="member-btn"><img src={`${process.env.PUBLIC_URL}/img/member.svg`} alt="member-logo"></img><Link to="#">會員登入</Link></div></li> */}
                         {/* <div className="language">
                             <Link
                                 to="/"
