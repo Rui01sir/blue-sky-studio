@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
 
-*{
-  font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
-  /* transform: scaleY(0.7); */
+
+* {
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+span[lang="en"] {
+  font-family: "Lexend Zetta";
 }
 
 .no-scroll {
@@ -122,7 +125,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* background-color: #374863; */
+  /* background-color: #FFFFFB; */
 }
 
 .navbar{
@@ -240,7 +243,7 @@ nav button {
     position: absolute;
     top: 80px;
     right: 0;
-    background-color:#e7eaeecf;
+    background-color:#e7eaeee2;
     padding-top: 10%;
     padding: 0px;
     z-index:10;
@@ -361,6 +364,7 @@ nav button {
     height: auto;
     padding: 0;
     margin: 0;
+    padding-top: 10%;
     padding-bottom: 100vh;
     list-style: none;
     display: flex;
@@ -398,6 +402,10 @@ footer{
   text-align: center;
   color: #fffffb;
   font-family: "Lexend Zetta", sans-serif;
+}
+
+.footer-bar h6 {
+  color: #FFFFFB;
 }
 
 .footer-bar ul{
@@ -700,7 +708,7 @@ footer{
 }
 
 .homepage-text{
-  width: 100%;
+  width: 50%;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -714,6 +722,51 @@ footer{
   text-align: center;
   /* transform: scaleY(0.7); */
 }
+
+/* .background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+} */
+
+.background-container img {
+  width: 60%;
+  height: auto; /* 保持圖片比例 */
+  position: absolute;
+  top: 35%; /* 垂直居中 */
+  left: 80%; /* 水平居中 */
+  transform: translate(-50%, -80%); /* 使圖片居中 */
+  z-index: -99;
+  animation: shake 8s ease-in-out infinite;
+}
+
+@media (max-width:1200px) {
+  .background-container img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -80%);
+    z-index: -99;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(0deg); /* 初始和結束位置 */
+  }
+  25% {
+    transform: translate(-60%, -60%) rotate(-5deg); /* 左上方晃動 */
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(5deg); /* 右下方晃動 */
+  }
+  75% {
+    transform: translate(-40%, -40%) rotate(-5deg); /* 右上方晃動 */
+  }
+}
+
 
 @media (max-width:1200px) {
   .homepage-banner{
@@ -743,12 +796,12 @@ footer{
 
   .homepage-banner__text h1{
     font-size: 40px;
-    color: #374863;
+    color: #FFFFFB;
   }
   
   .homepage-banner__text h4{
     font-size: 16px;
-    color: #374863;
+    color: #FFFFFB;
   }
 
   .homepage-banner__img{

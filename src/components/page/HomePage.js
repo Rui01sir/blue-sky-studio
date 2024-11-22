@@ -92,7 +92,7 @@ export const HomepageText = styled.div`
 
   @media (max-width: 765px) {
     height: 60%;
-    padding: 10%;
+    padding-bottom: 10%;
     h4 {
       font-size: 16px;
       color: #374863;
@@ -164,6 +164,12 @@ function HomePage() {
   return (
     <div>
       <HomepageContainer>
+          <div className="background-container">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/banner-circul.svg`}
+              alt="homepage-banner-circul"
+            />
+          </div>
         <HomepageBanner>
           <HomepageBannerText className="homepage-banner__text">
             <HomepageBannerTextH1>青空設計</HomepageBannerTextH1>
@@ -174,7 +180,7 @@ function HomePage() {
           </HomepageBannerText>
           <HomepageBannerImage className="homepage-banner__img">
             <img
-              src={`${process.env.PUBLIC_URL}/img/a9fbz-8ekt2.webp`}
+              src={`${process.env.PUBLIC_URL}/img/ak61a-aejcj.webp`}
               alt="homepage-banner"
             />
           </HomepageBannerImage>
