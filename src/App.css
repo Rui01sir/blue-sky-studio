@@ -4,6 +4,7 @@
 *{
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
+  /* transform: scaleY(0.7); */
 }
 
 .no-scroll {
@@ -34,27 +35,24 @@ li{
 
 h1{
   font-size: 64px;
-  color: #FFFFFB;
+  color: #374863;
   margin: 0;
   font-weight: 600;
-  transform: scaleY(0.7);
   display: inline-block;
 }
 
 h4{
   font-size: 36px;
-  color: #FFFFFB;
+  color: #374863;
   margin: 0;
   font-weight: 300;
-  transform: scaleY(0.7);
   display: inline-block;
 }
 
 h6{
-  color: #FFFFFB;
+  color: #374863;
   margin: 0;
   font-weight: 200;
-  transform: scaleY(0.7);
   display: inline-block;
 }
 
@@ -63,7 +61,6 @@ a{
   text-decoration: none;
   color: inherit;
   align-items: center;
-  transform: scaleY(0.7);
   display: inline-block;
 }
 
@@ -187,7 +184,7 @@ nav li {
 }
 
 .member-btn img a{
-  transform: scaleY(0.7);
+  /* transform: scaleY(0.7); */
   display: inline-block;
 }
 
@@ -243,7 +240,7 @@ nav button {
     position: absolute;
     top: 80px;
     right: 0;
-    background-color:#374863;
+    background-color:#e7eaeecf;
     padding-top: 10%;
     padding: 0px;
     z-index:10;
@@ -331,7 +328,7 @@ nav button {
     position: absolute;
     /* width: 100%; */
     height: 0.5px;
-    background-color: #fffffb;
+    background-color: #374863;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -364,15 +361,18 @@ nav button {
     height: auto;
     padding: 0;
     margin: 0;
+    padding-bottom: 100vh;
     list-style: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-nav ul li, nav ul.active li {
+  nav ul li, nav ul.active li {
+    height: 50px;
     margin: 5% 0;
-    margin-right: 17%;
-}
+    /* margin-right: 17%; */
+  }
 }
 
 /* Footer */
@@ -712,7 +712,7 @@ footer{
   width: 70%;
   color: #FFFFFB;
   text-align: center;
-  transform: scaleY(0.7);
+  /* transform: scaleY(0.7); */
 }
 
 @media (max-width:1200px) {

@@ -1,8 +1,9 @@
 import './App.css';
 import 'animate.css';
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/page/HomePage';
+import Link from './components/page/Link';
 import TopButton from './components/common/TopButton';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
@@ -27,6 +28,16 @@ function App() {
               <Loading onLoadingFinish={handleLoadingFinish} />
             ) : (
               <HomePage />
+            )
+          } 
+        />
+        <Route 
+          path="Link/" 
+          element={
+            isLoading ? (
+              <Loading onLoadingFinish={handleLoadingFinish} />
+            ) : (
+              <Link />
             )
           } 
         />

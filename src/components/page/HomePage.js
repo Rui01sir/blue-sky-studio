@@ -82,7 +82,6 @@ export const HomepageText = styled.div`
     width: 70%;
     color: #374863;
     text-align: center;
-    transform: scaleY(0.7);
   }
 
   @media (max-width: 1200px) {
