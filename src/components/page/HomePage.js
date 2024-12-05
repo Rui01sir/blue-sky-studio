@@ -19,6 +19,7 @@ export const HomepageBanner = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
+  z-index:-9;
 
   @media (max-width: 1200px) {
     height: 100%;
@@ -164,6 +165,12 @@ function HomePage() {
   return (
     <div>
       <HomepageContainer>
+          <div className="background-container-2">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/banner-circul.svg`}
+              alt="homepage-banner-circul"
+            />
+          </div>
           <div className="background-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/banner-circul.svg`}
