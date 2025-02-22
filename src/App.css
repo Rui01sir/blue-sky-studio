@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Lexend+Exa:wght@100..900&display=swap');
 
 * {
-  font-family: "Noto Serif JP", sans-serif;
+  font-family: "Noto Sans TC", serif;
+  font-weight: 400;
 }
 
 span[lang="en"] {
-  font-family: "Lexend Zetta";
+  font-family: "Lexend Deca", serif;
 }
 
 .no-scroll {
@@ -423,7 +424,7 @@ nav button {
 footer{
   width: 100%;
   height: 200px;
-  background-color: #374863;
+  background-color: #201f1f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -954,3 +955,4 @@ footer{
 .user-link ul li{
   background-color: #FFF;
 }
+
